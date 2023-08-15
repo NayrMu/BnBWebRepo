@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+      li {
+        margin: 1%;
+        display: flex;
+      }
+      
+      img {
+        margin-left: 10%;
+      }
+
+      p {
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -13,10 +27,13 @@
           
     </nav>
     <article>
-      <h1>Bread Prices</h1>
-      <ul>
-	<li>Zuccini Bread: 5$</li>
-	<li>Banana Bread: $5</li>
+      <div style="width: 100%;">
+        <p id="categoryParagraph">Some Info</p>
+        <ul>
+          <li>Zuccini<p>Some specific info</p><img src="stockBread1.jpeg" width: 100px; height: 100px;></li>
+          <li>Banana<p>Some more info</p><img src="stockBread2.jpeg" width: 100px; height: 100px;></li>
+          <li>Banana Nut<p>Even more info!</p><img src="stockBread3.jpeg" width: 100px; height: 100px;></li>
+      </div>
     </article>
     <footer>
     </footer>
