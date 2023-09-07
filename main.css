@@ -1,0 +1,69 @@
+.banner {
+  width: 300vw;
+  height: 40vh; /* Adjust the banner height as needed */
+  overflow: hidden;
+  position: relative;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  display: flex;
+}
+
+.image-container {
+  width: 200%; /* Double the container width for panning effect */
+  height: 100%; /* Match the banner height */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  animation: scroll 15s linear infinite alternate; /* Adjust the animation duration and direction */
+  transform: translateX(200%);
+}
+
+.image-container img {
+	min-height: 100%;
+  height: auto; /* Zoomed-in image width */
+  min-width: 100%;
+  width: auto; /* Maintain image aspect ratio */
+  object-position: center;
+  transform-origin: center; /* Zoom from the center */
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-600%); /* Move the container to create the panning effect */
+  }
+}
+
+@media only screen and (orientation: landscape) {
+	.hidden-lg {
+		display: none!important;
+	}
+	.image-container {
+		animation: scroll 60s linear infinite alternate;
+	}
+	.image-container img {
+		min-height: 100%;
+		width: auto;
+	}
+}
+@media only screen and (orientation: portrait) {
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400%); /* Move the container to create the panning effect */
+  }
+}
+	.hidden-sm {
+		display: none!important;
+	}
+	.image-container img {
+		min-height: 100%;
+		width: auto%;
+	}
+}
