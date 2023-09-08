@@ -10,7 +10,8 @@
 
 .image-container {
   width: 200%; /* Double the container width for panning effect */
-  height: 100%; /* Match the banner height */
+  height: 100%; /* Match the banner height */
+
   align-items: center;
   justify-content: center;
   display: flex;
