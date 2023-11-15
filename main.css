@@ -12,3 +12,7 @@
         display: block; /* Remove any spacing beneath the image */
         margin: 0 auto; /* Center the image horizontally within the container */
     }
+
+footer i {
+  font-size: 4vh;
+}

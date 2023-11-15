@@ -3,7 +3,7 @@ const dImages = ["dImages/deskBred1.jpg", "dImages/deskBred2.jpg", "dImages/desk
                 "dImages/deskCookies5.jpg", "dImages/deskPops1.jpg"]; // Add more image URLs as needed
 const pImages = ["pImages/portBred1.jpg", "pImages/portCookies1.jpg", "pImages/portCookies2.jpg", 
                 "pImages/portCookies3.jpg", "pImages/portPops1.jpg", "pImages/portPops2.jpg"]
-const slideshowInterval = 3000; // Change image every 3 seconds (3000 milliseconds)
+const slideshowInterval = 2500; // Change image every 3 seconds (3000 milliseconds)
 
 const displayedImage = document.getElementById('displayed-image');
 let currentIndex = 0;
