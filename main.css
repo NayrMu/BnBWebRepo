@@ -7,12 +7,19 @@
     
 }
 .image-container img {
-        max-width: 100%; /* Set the maximum width of the image to 100% of the container */
-        height: auto; /* Maintain the original image aspect ratio */
-        display: block; /* Remove any spacing beneath the image */
-        margin: 0 auto; /* Center the image horizontally within the container */
-    }
+    max-width: 100%; /* Set the maximum width of the image to 100% of the container */
+    height: auto; /* Maintain the original image aspect ratio */
+    display: block; /* Remove any spacing beneath the image */
+    white-space: nowrap;margin: 0 auto; /* Center the image horizontally within the container */
+}
 
-footer i {
-  font-size: 4vh;
+@media only screen and (orientation: landscape) {
+  footer i {
+    font-size: 4vh;
+  }
+}
+@media only screen and (orientation: portrait) {
+  footer i {
+    font-size: 4vw;
+  }
 }
