@@ -14,11 +14,17 @@
 }
 
 @media only screen and (orientation: landscape) {
+  footer p {
+    font-size: 4vh;
+  }
   footer i {
     font-size: 4vh;
   }
 }
 @media only screen and (orientation: portrait) {
+  footer p {
+    font-size: 4vw;
+  }
   footer i {
     font-size: 4vw;
   }
